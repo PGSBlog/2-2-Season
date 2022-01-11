@@ -1,0 +1,19 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "FirstClassApp"
+include ':app'
+include ':lab01'
+include ':lab02'
+include ':lab02:myapplication'
+include ':lab01:myapplication'
+include ':app:lab0072'
+include ':lab007'
+include ':androidtask'
+include ':lab777'
+include ':lab999'

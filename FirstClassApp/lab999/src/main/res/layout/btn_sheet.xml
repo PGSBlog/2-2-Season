@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomSheetContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+    <Button
+        android:id="@+id/p"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:drawableTop="@drawable/draw_06"
+        android:text="파파고"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:typeface="monospace"/>
+    <Button
+        android:id="@+id/y"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:drawableTop="@drawable/draw_07"
+        android:text="YBM"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:typeface="monospace"/>
+    <Button
+        android:id="@+id/n"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:drawableTop="@drawable/draw_08"
+        android:text="야나두"
+        android:textSize="12dp"
+    android:textStyle="bold"
+    android:typeface="monospace"/>
+
+</LinearLayout>
+<!-- 김찬우 -->
