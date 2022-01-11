@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="결과"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/correct_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="맞은단어"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_alignLeft="@id/result"
+            android:layout_below="@id/result"/>
+        <TextView
+            android:id="@+id/wrong_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="틀린단어"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:layout_alignLeft="@id/correct_answer"
+            android:layout_below="@id/correct_answer"/>
+    </RelativeLayout>
+</LinearLayout>

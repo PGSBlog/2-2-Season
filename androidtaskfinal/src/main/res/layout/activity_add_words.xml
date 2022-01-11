@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/string_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" 단어를 기입하시오."
+        android:inputType="textCapWords"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/meaning_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" 단어 뜻을 기입하시오."
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/step_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" 단계를 기입하시오."
+        android:inputType="number"
+        android:textSize="25sp"
+        android:layout_marginBottom="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
+    <Button
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="단어 저장"
+        android:textSize="25sp"
+        android:onClick="clickInsert"
+        android:background="@drawable/btn_style_left"
+        android:drawableLeft="@drawable/icon_save"
+        android:gravity="center"
+        android:padding="10dp"/>
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="단어 삭제"
+            android:textSize="25sp"
+            android:onClick="clickDelete"
+            android:background="@drawable/btn_style_right"
+            android:drawableLeft="@drawable/icon_delete"
+            android:gravity="center"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="단어 조회"
+        android:textSize="25sp"
+        android:onClick="clickSelectAll"
+        android:background="@drawable/btn_style"
+        android:drawableLeft="@drawable/icon_search"
+        android:gravity="center_horizontal"
+        android:padding="10dp" />
+
+</LinearLayout>
+
+
